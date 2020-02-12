@@ -10,8 +10,9 @@
 </head>
 <body>
   <nav class="navbar navbar-light" style="background-color: #e3f2fd; margin-bottom: 50px">
+    <%= link_to 'Home', home_path, :class => "btn btn-outline-info"%>
     <b class="navbar-brand" >My Blog</b>
-    <%= link_to 'New article', new_article_path, :class => "btn btn-danger"%>
+    <%= link_to 'New article', new_article_path, :class => "btn btn-outline-info"%>
   </nav>
   <div class="container">
     <%= yield %>
