@@ -1,0 +1,17 @@
+<div class="shadow p-3 mb-5 bg-white rounded text-secondary">
+  <p class="list-group-item list-group-item-success">
+    <strong>Title:</strong>
+    <%= @article.title %>
+  </p>
+  
+  <p class="list-group-item list-group-item-warning">
+    <strong>Text:</strong>
+    <%= @article.text %>
+  </p>
+  <%= link_to "Edit", edit_article_path(@article), :class => 'btn btn-sm btn-dark'%>
+  <%= link_to "Delete", article_path(@article), :class => 'btn btn-sm btn-danger',
+                          method: :delete,
+                          data: { confirm: 'Are you sure?' }%>
+</div>
+
+<%= link_to 'Back', articles_path, :class => 'btn btn-danger'%>
