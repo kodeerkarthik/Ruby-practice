@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
-  get 'welcome/index' 
+  get '/' => 'users#index'
+  get '/register' => 'users#register'
+  get '/login' => 'users#login'
+  post '/sessions' => 'sessions#create'
+  post '/users' => 'users#create'
+  get '/dashboard' => 'welcome#index' , as: 'home'
 
   resources :articles do 
     resources :comments
   end
 
-  root 'welcome#index', as: 'home'
+  # root 'welcome#index', as: 'home'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

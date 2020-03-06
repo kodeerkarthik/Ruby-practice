@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Login and register</title>
+	</head>
+    <body>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <form  action='/users' method='POST'>
+                    <input type='hidden' name='authenticity_token' value='<%=form_authenticity_token%>'><br>
+                    <input class="abc form-control" type='name' name='user[name]' placeholder="name"><br>
+                    <input class="abc1 form-control" type='email' name='user[email]' placeholder="email"><br>
+                    <input class="abc2 form-control" type='password' name='user[password]' placeholder="password"><br>
+                    <input class="abc3 form-control" type='password' name='user[password_confirmation]' placeholder="password_confirmation"><br>
+                    <input class="abc4 form-control btn btn-info" type='submit' name='submit' value='Register'><br><br>
+                    <%= link_to 'back',  '/', :class => 'btn btn-secondary btn-sm'  %>
+		            <%= link_to 'Login',  '/login', :class => 'btn btn-primary btn-sm'  %>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        
+	</body>
+</html>

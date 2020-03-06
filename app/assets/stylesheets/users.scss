@@ -1,0 +1,86 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.index_body {
+    background: rgb(217, 250, 167);
+}
+
+.image_div {
+    margin-top: 50px;
+}
+.image {
+    width: 100%;
+    border: 2px yellow solid;
+    border-radius: 50%;
+    box-shadow: red 0 0 100px;
+}
+// .abc {
+//     animation-name: example;
+//     animation-duration: 1s;
+//     position: relative;
+//     animation-iteration-count: 50;
+//     animation-direction: alternate;
+// }
+// .abc1 {
+//     animation-name: example1;
+//     animation-duration: 1s;
+//     position: relative;
+//     animation-iteration-count: 50;
+//     animation-direction: alternate;
+// }
+// .abc2 {
+//     animation-name: example2;
+//     animation-duration: 1s;
+//     position: relative;
+//     animation-iteration-count: 50;
+//     animation-direction: alternate;
+// }
+// .abc3 {
+//     animation-name: example3;
+//     animation-duration: 1s;
+//     position: relative;
+//     animation-iteration-count: 50;
+//     animation-direction: alternate;
+// }
+// .abc4 {
+//     animation-name: example4;
+//     animation-duration: 1s;
+//     position: relative;
+//     animation-iteration-count: 50;
+//     animation-direction: alternate;
+// }
+// @keyframes example {
+//     0%   { left:0px; top:0px;}
+//     25%  { left:200px; top:0px;}
+//     50%  { left:200px; top:200px;}
+//     75%  { left:0px; top:200px;}
+//     100% { left:0px; top:0px;}
+// }
+// @keyframes example1 {
+//     25%   { left:0px; top:0px;}
+//     50%  { left:200px; top:0px;}
+//     75%  { left:200px; top:200px;}
+//     100%  { left:0px; top:200px;}
+//     0% { left:0px; top:0px;}
+// }
+// @keyframes example2 {
+//     50%   { left:0px; top:0px;}
+//     75%  { left:200px; top:0px;}
+//     100%  { left:200px; top:200px;}
+//     0%  { left:0px; top:200px;}
+//     25% { left:0px; top:0px;}
+// }
+// @keyframes example3 {
+//     75%   { left:0px; top:0px;}
+//     100%  { left:200px; top:0px;}
+//     0%  { left:200px; top:200px;}
+//     25%  { left:0px; top:200px;}
+//     50% { left:0px; top:0px;}
+// }
+// @keyframes example4 {
+//     100%   { left:0px; top:0px;}
+//     0%  { left:200px; top:0px;}
+//     25%  { left:200px; top:200px;}
+//     50%  { left:0px; top:200px;}
+//     75% { left:0px; top:0px;}
+// }
