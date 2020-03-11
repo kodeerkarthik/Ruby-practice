@@ -2,23 +2,47 @@
 	<head>
 		<title>Login and register</title>
 	</head>
-    <body>
+    <body class='index_body'>
+      <div class='shade'>
         <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <form  action='/users' method='POST'>
-                    <input type='hidden' name='authenticity_token' value='<%=form_authenticity_token%>'><br>
-                    <input class="abc form-control" type='name' name='user[name]' placeholder="name"><br>
-                    <input class="abc1 form-control" type='email' name='user[email]' placeholder="email"><br>
-                    <input class="abc2 form-control" type='password' name='user[password]' placeholder="password"><br>
-                    <input class="abc3 form-control" type='password' name='user[password_confirmation]' placeholder="password_confirmation"><br>
-                    <input class="abc4 form-control btn btn-info" type='submit' name='submit' value='Register'><br><br>
-                    <%= link_to 'back',  '/', :class => 'btn btn-secondary btn-sm'  %>
-		            <%= link_to 'Login',  '/login', :class => 'btn btn-primary btn-sm'  %>
-                </form>
-            </div>
-            <div class="col-3"></div>
+          <div class="col-3"></div>
+          <div class="col-6 login_Body">
+            <form  action='/users' method='POST'>
+              <h1 class="alert-info btn-sm mb-5 text-center">CREATE ACCOUNT HERE</h1>
+              <input type='hidden' name='authenticity_token' value='<%=form_authenticity_token%>'>
+              <div class="row">
+                <label class="col-sm-2 col-form-label text-right form_lable">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" name='user[name]' placeholder="name" class="form-control mb-3"/>
+                </div>
+              </div>
+              <div class="row">
+                <label class="col-sm-2 col-form-label text-right form_lable">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" name='user[email]' placeholder="email" class="form-control mb-3"/>
+                </div>
+              </div>
+              <div class="row">
+                <label class="col-sm-2 col-form-label text-right form_lable">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" name='user[password]' placeholder="password" class="form-control mb-3"/>
+                </div>
+              </div>
+              <div class="row">
+                <label class="col-sm-2 col-form-label text-right form_lable">Confirm</label>
+                <div class="col-sm-10">
+                  <input type="password" name='user[password_confirmation]' placeholder="password_confirmation" class="form-control mb-3"/>
+                  <input class="form-control btn btn-info" type='submit' name='submit' value="Register">
+                </div>
+              </div>  
+              <div class='mt-5'> 
+                <%= link_to 'Cancel',  '/', :class => 'btn btn-secondary btn-sm'  %>
+                <%= link_to 'Login',  '/login', :class => 'btn btn-primary btn-sm'  %>
+              </div>
+            </form>
+          </div>
+          <div class="col-3"></div>
         </div>
-        
+      </div>  
 	</body>
 </html>

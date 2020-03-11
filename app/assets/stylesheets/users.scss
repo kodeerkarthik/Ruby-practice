@@ -2,85 +2,47 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .index_body {
-    background: rgb(217, 250, 167);
+    background:url('indexbg.jpg');
+    min-height: 590px;
+    background-size: cover;
 }
-
-.image_div {
-    margin-top: 50px;
+.shade {
+    margin: 0;
+    padding: 100px 100PX 0 100PX;
+    min-height: 590px;
+    background-color: rgba(53, 114, 114, 0.521);
 }
-.image {
-    width: 100%;
-    border: 2px yellow solid;
-    border-radius: 50%;
-    box-shadow: red 0 0 100px;
+.content{
+    background-color: rgba(17, 74, 99, 0.644);
+    height: 200px;
+    padding-bottom: 100px;
+    box-shadow: 5px 5px 25px rgba(65, 63, 63, 0.973);
+    border: 1px rgba(255, 255, 255, 0.233) solid;
 }
-// .abc {
-//     animation-name: example;
-//     animation-duration: 1s;
-//     position: relative;
-//     animation-iteration-count: 50;
-//     animation-direction: alternate;
-// }
-// .abc1 {
-//     animation-name: example1;
-//     animation-duration: 1s;
-//     position: relative;
-//     animation-iteration-count: 50;
-//     animation-direction: alternate;
-// }
-// .abc2 {
-//     animation-name: example2;
-//     animation-duration: 1s;
-//     position: relative;
-//     animation-iteration-count: 50;
-//     animation-direction: alternate;
-// }
-// .abc3 {
-//     animation-name: example3;
-//     animation-duration: 1s;
-//     position: relative;
-//     animation-iteration-count: 50;
-//     animation-direction: alternate;
-// }
-// .abc4 {
-//     animation-name: example4;
-//     animation-duration: 1s;
-//     position: relative;
-//     animation-iteration-count: 50;
-//     animation-direction: alternate;
-// }
-// @keyframes example {
-//     0%   { left:0px; top:0px;}
-//     25%  { left:200px; top:0px;}
-//     50%  { left:200px; top:200px;}
-//     75%  { left:0px; top:200px;}
-//     100% { left:0px; top:0px;}
-// }
-// @keyframes example1 {
-//     25%   { left:0px; top:0px;}
-//     50%  { left:200px; top:0px;}
-//     75%  { left:200px; top:200px;}
-//     100%  { left:0px; top:200px;}
-//     0% { left:0px; top:0px;}
-// }
-// @keyframes example2 {
-//     50%   { left:0px; top:0px;}
-//     75%  { left:200px; top:0px;}
-//     100%  { left:200px; top:200px;}
-//     0%  { left:0px; top:200px;}
-//     25% { left:0px; top:0px;}
-// }
-// @keyframes example3 {
-//     75%   { left:0px; top:0px;}
-//     100%  { left:200px; top:0px;}
-//     0%  { left:200px; top:200px;}
-//     25%  { left:0px; top:200px;}
-//     50% { left:0px; top:0px;}
-// }
-// @keyframes example4 {
-//     100%   { left:0px; top:0px;}
-//     0%  { left:200px; top:0px;}
-//     25%  { left:200px; top:200px;}
-//     50%  { left:0px; top:200px;}
-//     75% { left:0px; top:0px;}
-// }
+.computer {
+    opacity: 80%;
+}
+.heading{
+    text-align: left;
+    margin: 20px 0 0 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 20px;
+}
+.description{
+    text-align: justify;
+    margin: 20px 0 0 30px;
+    font-size: 15px;
+    color: white;
+}
+.login_Body {
+    background-color: rgba(17, 74, 99, 0.644);
+    padding: 50px;
+    box-shadow: 5px 5px 25px rgba(65, 63, 63, 0.973);
+    border: 1px rgba(255, 255, 255, 0.233) solid;
+}
+.form_lable{
+    color: wheat;
+    font-weight: bold;
+}

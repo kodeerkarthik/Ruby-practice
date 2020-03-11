@@ -9,12 +9,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class="navbar navbar-light" style="background-color: #e3f2fd; margin-bottom: 50px">
+  <nav class="navbar navbar-dark bg-dark">
+    <%= image_tag("logo.png",:width=>'100', :height=>'30' )%>
     <%= link_to 'Home', home_path, :class => "btn btn-outline-info"%>
-    <b class="navbar-brand" >My Blog</b>
     <%= link_to 'New article', new_article_path, :class => "btn btn-outline-info"%>
+    <%= link_to 'Logout', '/', :class => "btn btn-outline-info"%>
+    <form class="form-inline">
+      <%= link_to 'Login',  '/login', :class => 'btn btn-info mr-3 btn-sm'  %>
+      <%= link_to 'Register',  '/register', :class => 'btn btn-light mr-3 btn-sm'  %>     
+    </form>
   </nav>
-  <div class="container">
+  <div>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
     <%= yield %>
   </div>
 </body>
