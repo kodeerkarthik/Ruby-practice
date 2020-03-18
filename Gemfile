@@ -46,5 +46,8 @@ group :development do
 
   gem 'devise'
 
+  gem 'carrierwave', '~> 1.0'
+  gem 'mini_magick'
+
 end
 
