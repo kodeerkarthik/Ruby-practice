@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  load_and_authorize_resource
   http_basic_authenticate_with name: 'admin', password:'gothilla', except: [:index, :show]
   before_filter :authenticate_admin!, excpet: [:index, :show]
   
@@ -19,8 +20,8 @@ class ArticlesController < ApplicationController
   end
   
   def create
-    @article = Article.new(article_params)    
-   
+    @article = Article.new(article_params)  
+    @article.User_id = current_admin.id  
     if(@article.save)
       redirect_to @article
     else

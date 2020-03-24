@@ -9,7 +9,9 @@
       <strong>Text:</strong>
       <%= @article.text %>
     </p>
-    <%= link_to "Edit", edit_article_path(@article), :class => 'btn btn-sm btn-dark'%>
+    <% if can? :update, @article %>
+      <%= link_to "Edit", edit_article_path(@article), :class => 'btn btn-sm btn-dark'%>
+    <% end %>
     <%= link_to "Delete", article_path(@article), :class => 'btn btn-sm btn-danger',
                             method: :delete,
                             data: { confirm: 'Are you sure?' }%>

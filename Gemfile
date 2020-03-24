@@ -51,5 +51,6 @@ group :development do
 
   gem "fog-aws"
 
+  gem 'cancancan'
 end
 
