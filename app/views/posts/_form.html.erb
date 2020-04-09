@@ -1,7 +1,7 @@
 <div class='row'>
   <div class='col-4'></div>
   <div class='col-4 login_Body'>
-    <%= form_for post do |f| %>
+    <%= form_for post, remote:true do |f| %>
       <div class="row">
         <%= f.label :title, :class=>'col-sm-2 text-right form_lable'%>
         <div class="col-sm-10">
