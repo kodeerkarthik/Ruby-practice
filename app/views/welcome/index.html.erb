@@ -3,4 +3,13 @@
 
     <%= link_to 'Go to My Blog',  articles_path, :class => 'btn btn-warning mr-5'  %>
     <%= link_to 'Go to My Galary',  posts_path, :class => 'btn btn-info ml-5'  %>
+
+
+    <a href="#ex1" rel="modal:open" class="btn btn-success ml-5">Open Modal</a>
 </div>
+
+<div id="ex1" class="modal w-50 h-25 bg bg-warning text-dark">
+  <p class='font-weight-bold'>Welcome to my blog, thank you for clicking</p>
+  <a href="#" rel="modal:close", class="btn btn-sm btn-primary float-right">Close</a>
+</div>
+
